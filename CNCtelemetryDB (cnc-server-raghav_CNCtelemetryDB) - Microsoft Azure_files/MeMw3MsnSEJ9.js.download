@@ -1,0 +1,1 @@
+define("FxInternal/WeaveControls/SplitterComponent",{collapsePrimaryPane:"Collapse Primary Pane",collapseSecondaryPane:"Collapse Secondary Pane",expandPrimaryPane:"Expand Primary Pane",expandSecondaryPane:"Expand Secondary Pane"});
