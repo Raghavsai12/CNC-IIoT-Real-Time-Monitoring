@@ -37,7 +37,7 @@ CNC-Project/
 5. Power BI Desktop  
 
 ### Setup
-1. Install dependencies:
+Install dependencies:
 pip install -r requirements.txt
 Create .env file in simulator/ folder:
 IOTHUB_CONN_STR="Your Azure IoT Hub device connection string here"
@@ -77,7 +77,7 @@ Do not push your .env file to GitHub. It contains secrets like IoT Hub connectio
 __pycache__/
 *.pyc
 
-Author
+##Author
 Raghavendra Saiteja Basani
 B.Tech – Electrical & Electronics Engineering
 Project focused on IIoT, real-time monitoring, and data visualization.
