@@ -38,18 +38,20 @@ CNC-Project/
 
 ### Setup
 1. Install dependencies:
-```bash
+```
 pip install -r requirements.txt
+```
 2.Create .env file in simulator/ folder:
 IOTHUB_CONN_STR="Your Azure IoT Hub device connection string here"
 3.Run the simulator:
-```bash
+```
 cd simulator
 python simulator.py
+```
 
 This will start sending CNC telemetry data to Azure IoT Hub every 3 seconds.
 
-Database Schema
+## Database Schema
 
 Table: CNC_Telemetry
 Stores real-time CNC machine data.
@@ -64,6 +66,7 @@ Stores real-time CNC machine data.
 Example Stream Analytics Query
 
 This query is used in Azure Stream Analytics to process telemetry from IoT Hub and store it in the SQL Database:
+```
 SELECT
     temperature,
     motor_current,
@@ -74,7 +77,9 @@ INTO
     SQLTable
 FROM
     IoTHubInput
-Power BI Dashboard
+```
+
+## Power BI Dashboard
 
 Connects to Azure SQL Database.
 
@@ -85,13 +90,13 @@ Allows trend analysis and alerts for abnormal conditions.
 Security Notes
 
 Do not push your .env file to GitHub. It contains secrets like IoT Hub connection strings.
-```bash
+```
 .gitignore is configured to ignore:
 .env
 __pycache__/
 *.pyc
-Author
-
+```
+## Author
 Raghavendra Saiteja Basani
 B.Tech – Electrical & Electronics Engineering
 Project focused on IIoT, real-time monitoring, and data visualization.
