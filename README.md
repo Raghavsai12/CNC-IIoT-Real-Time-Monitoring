@@ -14,18 +14,24 @@ CNC Machine -> Simulator (Python) -> Azure IoT Hub -> Stream Analytics -> Azure 
 - **Power BI:** Visualizes telemetry data in real-time dashboards.  
 
 ## Project Structure
-CNC-Project/
-│
-├─ simulator/ # Python simulator for CNC telemetry
-│ └─ simulator.py
-│
-├─ CNCtelemetryDB (Azure files) # Database HTML export
-│ └─ CNCtelemetryDB.html
-│
-├─ DashBoard.pbix # Power BI dashboard file
-├─ .gitignore # Ignored files like .env and pycache
-├─ requirements.txt # Python dependencies
-└─ README.md # Project documentation
+
+-**CNC-Project**
+
+-**simulator** # Python simulator for CNC telemetry
+
+ -simulator.py
+ 
+ -**CNCtelemetryDB (Azure files)** # Database HTML export
+ 
+ -CNCtelemetryDB.html
+ 
+ -**DashBoard.pbix** # Power BI dashboard file
+ 
+-.gitignore # Ignored files like .env and pycache
+
+-requirements.txt # Python dependencies
+
+ -**README.md**# Project documentation
 
 ## Getting Started
 
@@ -42,7 +48,9 @@ CNC-Project/
 pip install -r requirements.txt
 ```
 2.Create .env file in simulator/ folder:
+
 IOTHUB_CONN_STR="Your Azure IoT Hub device connection string here"
+
 3.Run the simulator:
 ```
 cd simulator
@@ -98,7 +106,9 @@ __pycache__/
 ```
 ## Author
 Raghavendra Saiteja Basani
+
 B.Tech – Electrical & Electronics Engineering
+
 Project focused on IIoT, real-time monitoring, and data visualization.
 
 
