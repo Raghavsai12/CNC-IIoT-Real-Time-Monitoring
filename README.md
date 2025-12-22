@@ -51,13 +51,6 @@ Database Schema
 Table: CNC_Telemetry
 Stores real-time CNC machine data.
 
-Column Name	Data Type	Description
-id	INT (PK)	Auto-increment primary key
-temperature	FLOAT	CNC machine temperature (°C)
-motor_current	FLOAT	Motor current (A)
-cutting_speed	FLOAT	Cutting speed (RPM)
-timestamp	DATETIME	Time of data capture
-
 ##Example Stream Analytics Query
 This query is used in **Azure Stream Analytics** to process telemetry from IoT Hub and store it in the SQL Database:
 sql
