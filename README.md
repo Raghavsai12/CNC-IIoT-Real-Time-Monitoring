@@ -98,12 +98,7 @@ Allows trend analysis and alerts for abnormal conditions.
 Security Notes
 
 Do not push your .env file to GitHub. It contains secrets like IoT Hub connection strings.
-```
-.gitignore is configured to ignore:
-.env
-__pycache__/
-*.pyc
-```
+
 ## Author
 Raghavendra Saiteja Basani
 
